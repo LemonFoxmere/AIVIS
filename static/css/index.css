@@ -1,0 +1,61 @@
+body{
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+    height:100vh;
+    width:100vw;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    background-color: rgb(250, 250, 250);
+}
+
+h1{
+    margin: 0;
+    font-size: 3em
+}
+
+button{
+    background-color: rgb(43, 43, 43);
+    border:None;
+    height:3vh;
+    border-radius: 1.5vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+
+    width:10vw;
+
+    color:white;
+    margin-top: 1vw;
+
+    animation: shrink;
+    animation-duration: 300ms;
+
+    font-size: calc(0.6vh + 0.6vw);
+}
+
+button:hover{
+    width:13vw;
+    animation: expand;
+    animation-duration: 300ms;
+}
+
+@keyframes expand{
+    from {
+        width:10vw
+    }
+    to {
+        width:13vw
+    }
+}
+
+@keyframes shrink{
+    from {
+        width:13vw
+    }
+    to {
+        width:10vw
+    }
+}

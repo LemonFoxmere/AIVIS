@@ -1,0 +1,16 @@
+{
+  "name": "aiVis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "NNtest.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow/tfjs-node-gpu": "^2.6.0",
+    "express": "^4.17.1"
+  }
+}
