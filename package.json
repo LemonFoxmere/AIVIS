@@ -10,7 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@tensorflow/tfjs": "^2.7.0",
     "@tensorflow/tfjs-node-gpu": "^2.6.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "iris": "^0.2.3",
+    "mnist": "^1.1.0",
+    "tfjs": "^0.6.0"
   }
 }

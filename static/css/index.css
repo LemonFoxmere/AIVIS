@@ -21,11 +21,11 @@ button{
     background-color: rgb(43, 43, 43);
     border:None;
     height:3vh;
-    border-radius: 1.5vh;
+    border-radius: 1000px;
     padding-left: 2vw;
     padding-right: 2vw;
 
-    width:10vw;
+    width:80%;
 
     color:white;
     margin-top: 1vw;
@@ -37,25 +37,25 @@ button{
 }
 
 button:hover{
-    width:13vw;
+    width:100%;
     animation: expand;
     animation-duration: 300ms;
 }
 
 @keyframes expand{
     from {
-        width:10vw
+        width:80%
     }
     to {
-        width:13vw
+        width:100%
     }
 }
 
 @keyframes shrink{
     from {
-        width:13vw
+        width:100%
     }
     to {
-        width:10vw
+        width:80%
     }
 }
