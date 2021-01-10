@@ -49,30 +49,27 @@ h1{
 
 button{
     /* background-color: rgb(43, 43, 43); */
-    background: linear-gradient(30deg, 
-      rgb(0, 0, 0)    0%, 
-      rgb(0, 0, 0)    50%, 
-      rgb(28, 153, 255)  50%, 
-      rgb(245, 23, 234)  100% );
-    background-size: 220%;
+    outline: none;
 
+    background-color: rgb(43, 43, 43);
     border:None;
-    height:3vh;
+    height:100%;
     border-radius: 1000px;
     padding-left: 2vw;
     padding-right: 2vw;
 
-    width:100%;
+    width:90%;
 
     color:white;
-    margin-top: 1vw;
-    transition: all 400ms cubic-bezier(0.260, 0.050, 0.250, 1.000); /* custom */
+    margin-top: 0.5vw;
+
+    transition: all 230ms cubic-bezier(0.260, 0.050, 0.250, 1.000); /* custom */
 
     font-size: calc(0.6vh + 0.6vw);
+    font-weight:400;
 }
 
 button:hover{
-    background-position-x: -222px;
-    /* width:100%; */
-    transition: all 400ms cubic-bezier(0.260, 0.050, 0.250, 1.000); /* custom */
+    width:100%;
+    transition: all 230ms cubic-bezier(0.260, 0.050, 0.250, 1.000); /* custom */
 }

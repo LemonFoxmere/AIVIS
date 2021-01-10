@@ -1,11 +1,12 @@
-create more UI option for training options : 70%
-create dynamic debugging/monitoring option : 30%
-create progress bar + neural network visualization : 50%
-create customizable network : 0%
+create more UI option for training options : 75%
+create dynamic debugging/monitoring option : 50%
+create progress bar + neural network visualization : 80%
+create customizable network : 10%
 create tutorial page : 0%
 create export neural network button : pending
 
-UI optimization level: 100%
+UI optimization level: 98%
 
 bugs:
     - Tutorial button leads no where
+    - edge connection is glitchy

@@ -84,7 +84,7 @@ input:focus, input:hover {
 }
 
 html{
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 body{
@@ -175,8 +175,8 @@ button:hover{
 
 .layer{
     /* overflow: hidden; */
-
-    z-index: 1;
+/* 
+    z-index: 1; */
 
     background-color:rgb(200, 200, 200, 0);
     border-radius: 17px;
@@ -188,6 +188,7 @@ button:hover{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    z-index: 1;
 
     transition: all 130ms cubic-bezier(0.260, 0.050, 0.250, 1.000); /* custom */
 }
@@ -205,6 +206,7 @@ button:hover{
     border-style:solid;
     border-width: 1%;
     border-color:#0069f4;
+    z-index: 1;
 }
 
 .neuron.input{
@@ -212,4 +214,9 @@ button:hover{
 }
 .neuron.output{
     border-color:#04a12b;
+}
+
+.asdfghjkl{
+    opacity:0.5;
+    transition: all 130ms cubic-bezier(0.260, 0.050, 0.250, 1.000); /* custom */
 }

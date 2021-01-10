@@ -1,6 +1,7 @@
 // network parameter
 let layers = 3
 let neurons = [3,7,2]
+let training = false
 
 // training parameters
 let lr = 0.001
@@ -213,13 +214,130 @@ document.querySelector('#label-input').onchange = () => {
     }
 }
 // -------------------------------------------------------BUILD NEURAL NETWORK-------------------------------------------------------
-document.querySelector('#build').addEventListener('click', () => {
-    // create lines connecting neurons
-})
+
+let blink=true
+
+// slowly flash the lines
+setInterval(()=>{
+    if(training){
+        if(blink){
+            lineOpacity=1
+            // red=255
+        } else if(!blink){
+            lineOpacity=0.5
+            // red=0
+        }
+        blink = !blink
+    } else {
+        lineOpacity=0.5
+    }
+},700)
+
+let lineWidth = 5
+// let boxCenterXOffset = document.querySelector('.l1').getBoundingClientRect().width/2
+// let boxCenterYOffset = document.querySelector('.l1').getBoundingClientRect().height/2
+let boxCenterXOffset = 0
+let boxCenterYOffset = 0
+
+setInterval(()=>{
+    while(document.querySelector('.asdfghjkl')){
+        const ele = document.querySelector('.asdfghjkl')
+        ele.remove()
+    }
+    for (let i = 0; i < layers-1; i++){
+        for (let j = 0; j < document.querySelectorAll('.l' + (i+1)).length; j++){
+            for (let k = 0; k < document.querySelectorAll('.l' + (i+2)).length; k++){
+                buildVisNet(i+1, i+2, j, k)
+            }
+        }
+    }
+},10);
+
+let lineOpacity=0.5
+let currentLineOpacity=0.5
+let red=0
+let cr=0
+
+function buildVisNet(layer1, layer2, neuron1, neuron2){
+    var x1 = document.querySelectorAll('.l'+layer1)[neuron1].offsetLeft + boxCenterXOffset;
+    var x2 = document.querySelectorAll('.l'+layer2)[neuron2].offsetLeft + boxCenterXOffset;
+    var y1 = document.querySelectorAll('.l'+layer1)[neuron1].offsetTop + boxCenterYOffset;
+    var y2 = document.querySelectorAll('.l'+layer2)[neuron2].offsetTop + boxCenterYOffset;
+    var hypotenuse = Math.sqrt((x1-x2)*(x1-x2) + (y1-y2)*(y1-y2));
+    var angle = Math.atan2((y1-y2), (x1-x2)) *  (180/Math.PI);
+
+    if(angle >= 90 && angle < 180){
+        y1 = y1 - (y1-y2);
+    }
+    if(angle > 0 && angle < 90){
+        x1 = x1 - (x1-x2);
+        y1 = y1 - (y1-y2);
+    }
+    if(angle <= 0 && angle > -90){
+        x1 = x1 - (x1-x2);
+    }
+
+    var x1 = document.querySelectorAll('.l'+layer1)[neuron1].offsetLeft + boxCenterXOffset;
+    var x2 = document.querySelectorAll('.l'+layer2)[neuron2].offsetLeft + boxCenterXOffset;
+    var y1 = document.querySelectorAll('.l'+layer1)[neuron1].offsetTop + boxCenterYOffset;
+    var y2 = document.querySelectorAll('.l'+layer2)[neuron2].offsetTop + boxCenterYOffset;
+    
+    let r = hypotenuse/2
+
+    let circRad = document.querySelector('.l1').getBoundingClientRect().height/2
+
+    let offsetY = (Math.sin(toRadians(angle)))*r - circRad + lineWidth/4
+    // let offsetY = 0
+    let offsetX = (1+Math.cos(toRadians(angle))) * r - circRad + lineWidth/4
+    // let offsetX = 0
+
+    let line = document.createElement('div')
+    line.style.width = hypotenuse + 'px'
+    line.style.height = lineWidth + 'px'
+    if(Math.floor(cr) != Math.floor(r)){
+        if(cr > red){
+            cr-=0.1
+        }else{
+            cr+=0.1
+        }
+
+        if(cr > 255){
+            cr = 255
+        } else if(cr < 0){
+            cr = 0
+        }
+    }
+    line.style.backgroundColor='rgb('+cr+',0,0)'
+    line.style.borderRadius='1000px'
+    if(currentLineOpacity != lineOpacity){
+        if(currentLineOpacity > lineOpacity){
+            currentLineOpacity-=0.0003
+        }else{
+            currentLineOpacity+=0.0003
+        }
+
+        if(currentLineOpacity > 1){
+            currentLineOpacity = 1
+        } else if(currentLineOpacity < 0){
+            currentLineOpacity = 0
+        }
+    }
+    line.style.opacity = currentLineOpacity
+    line.style.position='fixed'
+
+    line.style.transform = 'translate(' + (x1) + 'px,' + (y1) + 'px)' + 'translate(' + -offsetX + 'px,' + -offsetY + 'px) ' + 'rotate(' + angle + 'deg) '
+
+    line.className = "asdfghjkl"
+    document.querySelector('#main').appendChild(line)
+}
+
+function toRadians (angle) {
+    return angle * (Math.PI / 180);
+}
 
 // --------------------------------------------------PROGRESS BAR STATUS MANAGEMENT----------------------------------------------------------
 let lastDisplayProgress = false
-let displayProgress = lastDisplayProgress;
+let displayProgress = lastDisplayProgress
 function updateProgressWidth(){
     if(displayProgress != lastDisplayProgress){
         lastDisplayProgress = displayProgress
@@ -390,10 +508,6 @@ document.querySelector("#help").addEventListener('mouseover', ()=>{
 document.querySelector(".logo").addEventListener('mouseover', ()=>{
     lastHover = ".logo"
 })
-// build
-document.querySelector("#build").addEventListener('mouseover', ()=>{
-    lastHover = "#build"
-})
 // layer
 document.querySelectorAll(".layer").forEach((elem) => {
     elem.addEventListener('mouseover', ()=>{
@@ -454,3 +568,11 @@ document.querySelector('#trainBtn').style.backgroundColor = "#e23a31"
 setInterval(() => {
     saveFileState()
 }, 50);
+
+for (let i = 0; i < layers-1; i++){
+    for (let j = 0; j < document.querySelectorAll('.l' + (i+1)).length; j++){
+        for (let k = 0; k < document.querySelectorAll('.l' + (i+2)).length; k++){
+            buildVisNet(i+1, i+2, j, k)
+        }
+    }
+}

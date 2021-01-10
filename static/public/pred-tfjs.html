@@ -10,8 +10,7 @@
 
     <title>Document</title>
 </head>
-<body>
-
+<body id='main'>
     </svg>
     <div style="width:100%; height:100vh; background-color: rgb(250, 250, 250); display:flex; flex-direction:column; align-items: center;">
         <div style="display: flex; width:100%; align-items: center; justify-content: start">
@@ -23,14 +22,14 @@
         </div>
         <!-- neural net editor -->
         <div style="background-color:#f0f0f0; border-radius: 13px; height:100%; width:97%; margin-top: 0.3%;
-            display:flex; align-items: center; justify-content: space-evenly; overflow: hidden;">
+            display:flex; align-items: center; justify-content: space-evenly; overflow: hidden;" id="editor">
             <!-- neural net visualizer. MAX_LAYER=9. MAX_NEURON_PER_LAYER=9-->
-            <div class="layer">
+            <div class="layer" id="ly1">
                 <div class="neuron input l1" id="n1"></div>
                 <div class="neuron input l1" id="n2"></div>
                 <div class="neuron input l1" id="n3"></div>
             </div>
-            <div class="layer">
+            <div class="layer" id="ly2">
                 <div class="neuron l2" id="n1"></div>
                 <div class="neuron l2" id="n2"></div>
                 <div class="neuron l2" id="n3"></div>
@@ -39,7 +38,7 @@
                 <div class="neuron l2" id="n6"></div>
                 <div class="neuron l2" id="n7"></div>
             </div>
-            <div class="layer">
+            <div class="layer" id="ly3">
                 <div class="neuron output l3" id="n1"></div>
                 <div class="neuron output l3" id="n2"></div>
             </div>
@@ -62,7 +61,6 @@
         <div style="margin-top:2vh; justify-self:start;display:flex; flex-direction:column; align-items:center; justify-content:start; width:100%">
             <button style="padding-top:5%; padding-bottom:5%" id="trainBtn">Train</button>
             <button style="padding-top:5%; padding-bottom:5%" id="testBtn">Test</button>
-            <button style="padding-top:5%; padding-bottom:5%; background-color: #28a524;" id="build">Build</button>
             
             <hr style="width:50%; margin:0; margin-top: 1vh; margin-bottom: 0.5vh;"> 
             
@@ -86,9 +84,9 @@
         <hr style="width:100%; margin-top: 3vh; margin-bottom:3vh"> 
 
         <!-- special section -->
-        <div style="text-align:center; justify-self:start; display:flex; flex-direction:column; align-items:center; justify-content:start; width:100%;">
-            <!-- <h2 style="margin-bottom:1vh">Miscellaneous</h2> -->
-            <p style="margin:0; color: rgb(92, 92, 92);">Coming Soon!</p>
+        <div style="justify-self:start;display:flex; flex-direction:column; align-items:center; justify-content:start; width:100%">
+            <button style="padding-top:5%; padding-bottom:5%" id="addLayer">Add Layer</button>
+            <button style="padding-top:5%; padding-bottom:5%" id="delLayer">Remove Layer</button>
         </div>
 
         <!-- tutorial section -->
