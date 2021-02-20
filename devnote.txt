@@ -5,3 +5,5 @@ Blue = 389ff4
 neuron green = 04a12b
 neuron red = e20001
 neuron blue = 0069f4
+
+Grey = 3d3c42

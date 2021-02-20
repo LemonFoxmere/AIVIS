@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="206.19948mm"
+   height="39.884834mm"
+   viewBox="0 0 206.19948 39.884834"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="AIVISLogo.svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient827">
+      <stop
+         style="stop-color:#ff00f2;stop-opacity:1"
+         offset="0"
+         id="stop823" />
+      <stop
+         style="stop-color:#ff7900;stop-opacity:1"
+         offset="1"
+         id="stop825" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient827"
+       id="linearGradient829"
+       x1="95.084503"
+       y1="489.0242"
+       x2="246.73827"
+       y2="428.04172"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient827"
+       id="linearGradient882"
+       gradientUnits="userSpaceOnUse"
+       x1="95.084503"
+       y1="489.0242"
+       x2="246.73827"
+       y2="428.04172" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient827"
+       id="linearGradient884"
+       gradientUnits="userSpaceOnUse"
+       x1="95.084503"
+       y1="489.0242"
+       x2="246.73827"
+       y2="428.04172" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient827"
+       id="linearGradient886"
+       gradientUnits="userSpaceOnUse"
+       x1="95.084503"
+       y1="489.0242"
+       x2="246.73827"
+       y2="428.04172" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient827"
+       id="linearGradient888"
+       gradientUnits="userSpaceOnUse"
+       x1="95.084503"
+       y1="489.0242"
+       x2="246.73827"
+       y2="428.04172" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient827"
+       id="linearGradient890"
+       gradientUnits="userSpaceOnUse"
+       x1="95.084503"
+       y1="489.0242"
+       x2="246.73827"
+       y2="428.04172" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient827"
+       id="linearGradient892"
+       gradientUnits="userSpaceOnUse"
+       x1="95.084503"
+       y1="489.0242"
+       x2="246.73827"
+       y2="428.04172" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.2462598"
+     inkscape:cx="361.53852"
+     inkscape:cy="1.4847344"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1720"
+     inkscape:window-height="1385"
+     inkscape:window-x="1720"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-1.9002503,-128.55757)">
+    <g
+       aria-label="A I V I S"
+       transform="matrix(1.3772387,0,0,1.3772387,-127.81573,-484.65084)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:Montserrat;letter-spacing:0px;word-spacing:0px;fill:url(#linearGradient892);fill-opacity:1;stroke:none"
+       id="flowRoot815">
+      <path
+         d="m 102.02555,467.52483 -2.800003,6.36 h -5.04 l 12.320003,-27.96 h 5.04 l 12.32,27.96 h -5.04 l -2.8,-6.36 z m 12.08,-4.36 -5.08,-11.52 -5.08,11.52 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:Montserrat;fill:url(#linearGradient882);fill-opacity:1"
+         id="path871"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 138.70542,445.92483 h 4.72 v 27.96 h -4.72 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:Montserrat;fill:url(#linearGradient884);fill-opacity:1"
+         id="path873"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 174.90529,473.88483 h -5.28 l -11.24,-27.96 h 5.28 l 8.6,20.88 8.6,-20.88 h 5.28 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:Montserrat;fill:url(#linearGradient886);fill-opacity:1"
+         id="path875"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 201.10517,445.92483 h 4.72 v 27.96 h -4.72 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:Montserrat;fill:url(#linearGradient888);fill-opacity:1"
+         id="path877"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 232.98504,449.60483 q -2.04,0 -3.36,0.84 -1.32,0.84 -1.32,2.56 0,1.68 1.32,2.6 1.32,0.88 5.6,1.92 4.32,1.04 6.48,2.92 2.2,1.88 2.2,5.56 0,3.64 -2.76,5.92 -2.76,2.28 -7.24,2.28 -6.56,0 -11.64,-4.52 l 2.96,-3.56 q 4.24,3.68 8.8,3.68 2.28,0 3.6,-0.96 1.36,-1 1.36,-2.6 0,-1.64 -1.28,-2.52 -1.24,-0.92 -4.32,-1.64 -3.08,-0.76 -4.68,-1.36 -1.6,-0.64 -2.84,-1.64 -2.48,-1.88 -2.48,-5.76 0,-3.88 2.8,-5.96 2.84,-2.12 7,-2.12 2.68,0 5.32,0.88 2.64,0.88 4.56,2.48 l -2.52,3.56 q -1.24,-1.12 -3.36,-1.84 -2.12,-0.72 -4.2,-0.72 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:Montserrat;fill:url(#linearGradient890);fill-opacity:1"
+         id="path879"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>
