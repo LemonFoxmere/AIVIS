@@ -1,4 +1,6 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/LemonOrangeWasTaken/AIVIS/blob/master/LICENSE)
+[![Website shields.io](https://img.shields.io/website?down_message=offline&style=for-the-badge&up_message=online&url=https%3A%2F%2Faivisualized.com)](http://aivisualized.com/)
+[![Maintenance](https://img.shields.io/maintenance/yes/2021?color=blue&style=for-the-badge)](https://github.com/LemonOrangeWasTaken/AIVIS/commits)
+[![License: MIT](https://img.shields.io/github/license/LemonOrangeWasTaken/AIVIS?color=orange&style=for-the-badge)](https://github.com/LemonOrangeWasTaken/AIVIS/blob/master/LICENSE)
 
 <br>
 
