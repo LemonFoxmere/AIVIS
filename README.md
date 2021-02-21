@@ -1,7 +1,7 @@
 [![MIT License][license-shield]][license-url]
 
 <p align="center">
-        <img src="https://aivisualized.com/logo.svg" style="zoom:30%; text-align:center"/>
+        <img src="https://aivisualized.com/logo.svg" width="130" height="130" style="text-align:center"/>
 <h3 align="center">A New Window to Your Neural Network </h3>
         <p align="center">
             You actually read me! Good for you!
