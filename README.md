@@ -1,4 +1,4 @@
-[![MIT License][license-shield]][license-url]
+[![MIT License][license-shield]][https://github.com/LemonOrangeWasTaken/AIVIS/blob/master/LICENSE]
 
 <p align="center">
         <img src="https://aivisualized.com/logo.svg" width="130" height="130" style="text-align:center"/>
