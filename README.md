@@ -1,12 +1,7 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 <p align="center">
-        <img src="https://aivisualized.com/AIVISLogo.svg" style="width:37%; text-align:center"/>
+        <img src="https://aivisualized.com/AIVISLogo.svg" style="width:17%; text-align:center"/>
 <h3 align="center">A New Window to Your Neural Network </h3>
         <p align="center">
             You actually read me! Good for you!
