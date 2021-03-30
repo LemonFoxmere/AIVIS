@@ -10,3 +10,18 @@ UI optimization level: 95%
 
 bugs:
     - edge connection is glitchy
+
+Default data
+Arrows pointing toward help or whatever
+Tutorial button
+move train and test to the bottom
+automatic input and output neuron match up
+First time help run through
+new help message for input and output layers
+layer total indications (2<x<9)
+hover appear buttons for neuron manipulations
+    - improve scroll ability
+neruon display on multi-bar
+learn button   
+    - gives necessary information on neural nets and how to use it
+more dynamic learning button

@@ -24,6 +24,7 @@ let isTrainEmpty = true; let isLabelEmpty = true; let isEpochEmpty = true; let i
 
 // create simple test data
 const testPred = null;
+let help_clicked = false;
 
 const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
 
@@ -70,6 +71,8 @@ function readTextFile(file, callback) {
 // test model
 document.querySelector('#testBtn').addEventListener('click', () => {
     if(model == null || trainIter == 0) return
+
+    helpWanted = false
 
     // select a random input
     let length = tX.shape[0]
@@ -334,7 +337,7 @@ let blink=true
 //     }
 // },700)
 
-let lineWidth = 5
+let lineWidth = 2
 // let boxCenterXOffset = document.querySelector('.l1').getBoundingClientRect().width/2
 // let boxCenterYOffset = document.querySelector('.l1').getBoundingClientRect().height/2
 let boxCenterXOffset = 0
@@ -346,6 +349,10 @@ setInterval(()=>{
         ele.remove()
     }
     for (let i = 0; i < layers-1; i++){
+        if(document.querySelectorAll('.l' + (i+1)).length + document.querySelectorAll('.l' + (i+2)).length > 9){
+            buildVisNetHidden(document.querySelector('#l' + (i+1)), document.querySelector('#l' + (i+2))) 
+            continue
+        }
         for (let j = 0; j < document.querySelectorAll('.l' + (i+1)).length; j++){
             for (let k = 0; k < document.querySelectorAll('.l' + (i+2)).length; k++){
                 buildVisNet(i+1, i+2, j, k)
@@ -354,10 +361,36 @@ setInterval(()=>{
     }
 },10);
 
-let lineOpacity=0.5
-let currentLineOpacity=0.5
+let lineOpacity=1
+let currentLineOpacity=1
 let red=0
 let cr=0
+
+function buildVisNetHidden(layer1, layer2){
+
+    let shortHand = document.createElement('div')
+    shortHand.classList.add('asdfghjkl')
+    shortHand.style.backgroundColor='rgb(0,0,0)'
+    shortHand.style.borderRadius='1000px'
+    shortHand.style.opacity = currentLineOpacity
+    shortHand.style.position='fixed'
+    shortHand.style.width = '10px'
+    shortHand.style.height = '10px'
+
+    shortHand1 = shortHand.cloneNode(true)
+    shortHand2 = shortHand.cloneNode(true)
+
+    const centerX = (layer1.offsetLeft + layer1.offsetWidth + layer2.offsetLeft)/2
+    const centerY = (layer1.offsetTop) + layer1.offsetHeight / 2
+
+    shortHand.style.transform = 'translate(' + (centerX-5) + 'px,' + (centerY-25) + 'px)'
+    shortHand1.style.transform = 'translate(' + (centerX-5) + 'px,' + (centerY-5) + 'px)'
+    shortHand2.style.transform = 'translate(' + (centerX-5) + 'px,' + (centerY+15) + 'px)'
+
+    document.querySelector('#main').appendChild(shortHand)
+    document.querySelector('#main').appendChild(shortHand1)
+    document.querySelector('#main').appendChild(shortHand2)
+}
 
 function buildVisNet(layer1, layer2, neuron1, neuron2){
     var x1 = document.querySelectorAll('.l'+layer1)[neuron1].offsetLeft + boxCenterXOffset;
@@ -567,6 +600,7 @@ document.querySelector('#addLayer').addEventListener('click', ()=>{
     const lay = layers
     let prevLayer = document.querySelector('#l' + (lay-1)); // remove last layer's shit
     prevLayer.replaceWith(prevLayer.cloneNode(true));
+    
     document.querySelector('#l' + lay).addEventListener('wheel', (e)=>{ // add new event listener
         if (checkScrollDirectionIsUp(e)) {
             addNeuron(lay,'output')
@@ -580,6 +614,9 @@ document.querySelector('#addLayer').addEventListener('click', ()=>{
         } else {
             delNeuron(lay-1)
         }
+    })
+    document.querySelector('#l' + (lay-1)).addEventListener('mouseover', (e)=>{ // add new event listener
+        lastHover = ".layer"
     })
 })
 
@@ -627,7 +664,11 @@ setInterval(()=>{
             return
         }
         if(document.querySelectorAll('.neuron').length < 18){
-            changeStatus("Ready")
+            if(!help_clicked){
+                changeStatus("Need Help Getting Started? Click the Help Button!")
+            } else {
+                changeStatus("Ready")
+            }
             currentStatusOK = 0
         }
     }
@@ -693,6 +734,7 @@ document.querySelector('#help').addEventListener('click', ()=>{
     last_clicked = Date.now();
     helpWanted = !helpWanted;
     lastHover = null
+    help_clicked = true
     if (helpWanted){ // when help is wanted, start progress bar transition and text change
         displayProgress = true
         anime({
