@@ -1,12 +1,11 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![Website shields.io](https://img.shields.io/website?down_message=offline&style=for-the-badge&up_message=online&url=https%3A%2F%2Faivisualized.com)](http://aivisualized.com/)
+[![Maintenance](https://img.shields.io/maintenance/yes/2021?color=blue&style=for-the-badge)](https://github.com/LemonOrangeWasTaken/AIVIS/commits)
+[![License: MIT](https://img.shields.io/github/license/LemonOrangeWasTaken/AIVIS?color=orange&style=for-the-badge)](https://github.com/LemonOrangeWasTaken/AIVIS/blob/master/LICENSE)
+
+<br>
 
 <p align="center">
-        <img src="https://aivisualized.com/AIVISLogo.svg" style="width:37%; text-align:center"/>
+        <img src="https://aivisualized.com/logo.svg" width="130" height="130" style="text-align:center"/>
 <h3 align="center">A New Window to Your Neural Network </h3>
         <p align="center">
             You actually read me! Good for you!
