@@ -25,3 +25,4 @@ neruon display on multi-bar
 learn button   
     - gives necessary information on neural nets and how to use it
 more dynamic learning button
+show dynamic edge weights thru color
