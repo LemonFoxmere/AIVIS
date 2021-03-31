@@ -1,6 +1,7 @@
 .logo{
     font-weight: 300;
-    font-size: calc(0.8vh + 0.8vw);
+    /* font-size: calc(0.8vh + 0.8vw); */
+    font-size: 2em;
 
     background: linear-gradient(30deg, 
       rgb(0, 0, 0)    0%, 
@@ -16,7 +17,7 @@
 
     overflow: hidden;
 
-    opacity: 0.6;
+    opacity: 0.8;
     
     transition: all 400ms cubic-bezier(0.260, 0.050, 0.250, 1.000); /* custom */
 }
@@ -28,7 +29,8 @@
 }
 
 p{
-    font-size: calc(0.6vh + 0.6vw);
+    /* font-size: calc(0.6vh + 0.6vw); */
+    font-size: 100%;
     color:rgb(80, 80, 80)
 }
 
@@ -51,7 +53,8 @@ input{
     width:60%;
     /* height:100%; */
 
-    font-size: calc(0.6vh + 0.6vw);
+    /* font-size: calc(0.6vh + 0.6vw); */
+    font-size: 100%;
 
     padding-right:8%;
     padding-left:8%;
@@ -110,7 +113,8 @@ h1{
 }
 
 h2{
-    font-size: calc(0.8vh + 0.8vw);
+    /* font-size: calc(0.8vh + 0.8vw); */
+    font-size: 2em;
     margin:0;
 }
 
@@ -123,14 +127,17 @@ button{
     padding-left: 1vw;
     padding-right: 1vw;
 
+    max-height:40px;
+
     width:75%;
 
     color:white;
-    margin-top: 0.5vw;
+    margin-top: 0.5vh;
 
     transition: all 230ms cubic-bezier(0.260, 0.050, 0.250, 1.000); /* custom */
 
-    font-size: calc(0.6vh + 0.6vw);
+    /* font-size: calc(0.6vh + 0.6vw); */
+    font-size: 80%;
     font-weight:400;
 }
 
